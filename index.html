@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__left-block">
+            <div class="header__logo">
+                <img src="icons/logo.svg" alt="Логотип">
+            </div>
+            <nav class="header__links">
+                <a href="#" class="header__link">Food delivery</a>
+                <a href="#" class="header__link">Сalorie count</a>
+            </nav>
+        </div>
+        <div class="header__right-block">
+            <button class="btn btn_white">Сontact us</button>
+        </div>
+    </header>
+
+
+    <div class="preview">
+        <div class="bgc_blue"></div>
+        <div class="container">
+            <div class="tabcontainer">
+                <div class="tabcontent">
+                    <img src="img/tabs/vegy.jpg" alt="vegy">
+                    <div class="tabcontent__descr">
+                        Menu "Fitnes" - is a new approach to cooking: more fresh vegetables and fruits. For people who
+                        are interested in sports; active and healthy. It is a new product with optimal price and
+                        high quality!
+                    </div>
+                </div>
+                <div class="tabcontent">
+                    <img src="img/tabs/elite.jpg" alt="elite">
+                    <div class="tabcontent__descr">
+                        Menu "Premium" - we use not only the beautiful packaging design, but also the quality of the
+                        dishes. Red fish, seafood, fruit - restaurant menu without going to restaurant!
+                    </div>
+                </div>
+                <div class="tabcontent">
+                    <img src="img/tabs/post.jpg" alt="post">
+                    <div class="tabcontent__descr">
+                        Our special "Lean Menu" - is a careful selection of ingredients: complete absence of products of
+                        animal origin. Complete harmony with yourself and nature in each element!
+                    </div>
+                </div>
+                <div class="tabcontent">
+                    <img src="img/tabs/vegy.jpg" alt="vegy">
+                    <div class="tabcontent__descr">
+                        Menu "Balanced" - is the consistency of your diet with all scientific recommendations. We
+                        carefully calculate your need for calories, proteins, fats, carbohydrates and create the best
+                        dishes for you.
+                    </div>
+                </div>
+                <div class="tabheader">
+                    <h3>Select Power Style</h3>
+                    <div class="tabheader__items">
+                        <div class="tabheader__item tabheader__item_active">Fitnes</div>
+                        <div class="tabheader__item">Premium</div>
+                        <div class="tabheader__item">Lean</div>
+                        <div class="tabheader__item">Balanced</div>
+                    </div>
+                </div>
+            </div>
+            <div class="preview__life">Live your life to the fullest!</div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="offer">
+        <div class="bgc_y"></div>
+        <div class="container">
+            <div class="offer__text">
+                <h2 class="title">What can we offer you?</h2>
+                <div class="offer__descr">
+                    Our main idea is the right food. It can be simple and delicious. We are not just shipping, we are
+                    service! We took on all the calculations of proteins, fats, carbohydrates, calories, portions and
+                    other important but boring aspects. All you have left is a healthy, nutritious and proper meal that
+                    we bring right under the door.
+                </div>
+            </div>
+            <div class="offer__action">
+                <button class="btn btn_dark">Contact us</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="offer__advantages">
+                <h2>Quick and useful</h2>
+                <div class="offer__advantages-text">
+                    Cooking at home takes a lot of effort, time and nerves. We bring food at once for the whole day, and
+                    you can to act as you please, without adjusting to anyone and being sure of the quality of the
+                    product!
+                </div>
+                <h2>Proper diet</h2>
+                <div class="offer__advantages-text">
+                    We developed a special menu, which takes into account all the nuances of proper nutrition, from
+                    balance of BJO to their preparation and crushing diet.
+                </div>
+            </div>
+            <div class="offer__slider">
+                <div class="offer__slider-counter">
+                    <div class="offer__slider-prev">
+                        <img src="icons/left.svg" alt="prev">
+                    </div>
+                    <span id="current">03</span>
+                    /
+                    <span id="total">04</span>
+                    <div class="offer__slider-next">
+                        <img src="icons/right.svg" alt="next">
+                    </div>
+                </div>
+                <div class="offer__slider-wrapper">
+                    <div class="offer__slide">
+                        <img src="img/slider/pepper.jpg" alt="pepper">
+                    </div>
+                    <!-- <div class="offer__slide">
+                        <img src="img/slider/food-12.jpg" alt="food">
+                    </div>
+                    <div class="offer__slide">
+                        <img src="img/slider/olive-oil.jpg" alt="oil">
+                    </div>
+                    <div class="offer__slide">
+                        <img src="img/slider/paprika.jpg" alt="paprika">
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="calculating">
+        <div class="container">
+            <h2 class="title">Calculate your calorie requirement</h2>
+            <div class="calculating__field">
+                <div class="calculating__subtitle">
+                    Your gender
+                </div>
+                <div class="calculating__choose" id="gender">
+                    <div class="calculating__choose-item calculating__choose-item_active">Women</div>
+                    <div class="calculating__choose-item">Men</div>
+                </div>
+
+                <div class="calculating__subtitle">
+                    Your constitution
+                </div>
+                <div class="calculating__choose calculating__choose_medium">
+                    <input type="text" id="height" placeholder="Enter height" class="calculating__choose-item">
+                    <input type="text" id="weight" placeholder="Enter weight" class="calculating__choose-item">
+                    <input type="text" id="age" placeholder="Enter age" class="calculating__choose-item">
+                </div>
+
+                <div class="calculating__subtitle">
+                    Select your physical activity
+                </div>
+                <div class="calculating__choose calculating__choose_big">
+                    <div id="low" class="calculating__choose-item">Low activity </div>
+                    <div id="small" class="calculating__choose-item calculating__choose-item_active">Low-middle activity
+                    </div>
+                    <div id="medium" class="calculating__choose-item">High-middle activity</div>
+                    <div id="high" class="calculating__choose-item">High activity</div>
+                </div>
+
+                <div class="calculating__divider"></div>
+
+                <div class="calculating__total">
+                    <div class="calculating__subtitle">
+                        Your daily calorie intake:
+                    </div>
+                    <div class="calculating__result">
+                        <span>2700</span> calories
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="menu">
+        <h2 class="title">Our menu for the day</h2>
+
+        <div class="menu__field">
+            <div class="container">
+                <div class="menu__item">
+                    <img src="img/tabs/vegy.jpg" alt="vegy">
+                    <h3 class="menu__item-subtitle">Meny "Fitnes"</h3>
+                    <div class="menu__item-descr">Meny "Fitnes" - is a new approach to cooking: more fresh vegetables
+                        and fruits. Product of active and healthy people. It is a brand new product with optimal price
+                        and high quality!</div>
+                    <div class="menu__item-divider"></div>
+                    <div class="menu__item-price">
+                        <div class="menu__item-cost">Priсe:</div>
+                        <div class="menu__item-total"><span>229</span> UAH for a day</div>
+                    </div>
+                </div>
+                <div class="menu__item">
+                    <img src="img/tabs/elite.jpg" alt="elite">
+                    <h3 class="menu__item-subtitle">Menu "Premium"</h3>
+                    <div class="menu__item-descr">In menu "Premium" we use not only the beautiful packaging design, but
+                        also the quality of the dishes. Red fish, seafood, fruit - restaurant menu without going to
+                        restaurant!</div>
+                    <div class="menu__item-divider"></div>
+                    <div class="menu__item-price">
+                        <div class="menu__item-cost">Priсe:</div>
+                        <div class="menu__item-total"><span>550</span> UAH for a day</div>
+                    </div>
+                </div>
+                <div class="menu__item">
+                    <img src="img/tabs/post.jpg" alt="post">
+                    <h3 class="menu__item-subtitle">Menu "Lean"</h3>
+                    <div class="menu__item-descr">Menu "Lean" - is a careful selection of ingredients: complete absence
+                        of animal products, milk from almonds, oats, coconut or buckwheat, the right amount of protein
+                        due to tofu and imported vegetarian steaks. </div>
+                    <div class="menu__item-divider"></div>
+                    <div class="menu__item-price">
+                        <div class="menu__item-cost">Priсe:</div>
+                        <div class="menu__item-total"><span>430</span> UAH for a day</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="order">
+        <div class="container">
+            <div class="title">Book a practice day right now!</div>
+            <form action="#" class="order__form">
+                <input required placeholder="Name" name="name" type="text" class="order__input">
+                <input required placeholder="Phone number" name="phone" type="phone" class="order__input">
+                <img src="icons/right.svg" alt="right">
+                <button class="btn btn_dark btn_min">Call back</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="promotion">
+        <div class="bgc_y"></div>
+        <div class="container">
+            <div class="promotion__text">
+                <div class="title">Promotion for new customers!</div>
+                <div class="promotion__descr">
+                    We value every client and invite you to become one of them on very favorable terms.
+                    Everyone who orders food delivery for a week will be given a discount of
+                    <span>20%!</span>
+                    <br><br>
+                    The action will end on May 20 at 00:00
+                </div>
+            </div>
+            <div class="promotion__timer">
+                <div class="title">The remaining part of the promotion:</div>
+                <div class="timer">
+                    <div class="timer__block">
+                        <span id="days">12</span>
+                        days
+                    </div>
+                    <div class="timer__block">
+                        <span id="hours">20</span>
+                        hours
+                    </div>
+                    <div class="timer__block">
+                        <span id="minutes">56</span>
+                        minutes
+                    </div>
+                    <div class="timer__block">
+                        <span id="seconds">20</span>
+                        seconds
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="social">
+                <div class="subtitle">We’re on social media:</div>
+                <a href="#" class="link">Instagram</a>
+                <a href="#" class="link">Facebook</a>
+            </div>
+            <div class="pepper">
+                <img src="icons/veg.svg" alt="pepper">
+            </div>
+            <div class="call">
+                <div class="subtitle">Or call us</div>
+                <a href="#" class="link">+380678341034</a>
+                <a href="#" class="link">+380500941356</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <form action="#">
+                    <div class="modal__close">&times;</div>
+                    <div class="modal__title">We will contact you as soon as possible!</div>
+                    <input required placeholder="Ваше имя" name="name" type="text" class="modal__input">
+                    <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal__input">
+                    <button class="btn btn_dark btn_min">Call me back</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
